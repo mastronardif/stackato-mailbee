@@ -1,0 +1,43 @@
+#!/usr/local/bin/perl
+use CGI::Application::PSGI;
+use Plack::Builder;
+use JSON;
+
+use Encode;
+use strict;
+use warnings;
+
+
+=comment
+my $handler = sub {
+    my $env = shift;
+    my $app = sub { [ 200, [ 'Content-Type' => 'text/html' ], [ '(3)Hello World' ] ] };
+    my $res = CGI::Application::PSGI->run($app);
+
+    $res->[2][0] = encode('utf-8', $res->[2][0]);
+
+    return $res;
+};
+
+builder {
+ #enable "Static", path => qr!^/static!, root => './htdocs';
+  enable 'Plack::Middleware::ContentLength';
+  $handler;
+};
+=cut
+
+my $app = sub {
+    my $env = shift;
+    if ($env->{PATH_INFO} eq '/whatever.json') {
+        my $body = JSON::encode_json({
+            hello => 'holly fucking shit now i have json shit world',
+        });
+        return [ 200, ['Content-Type', 'application/json'], [ $body ] ];
+    }
+    return [ 404, ['Content-Type', 'text/html'], ['FM sNot Found']];
+};
+
+builder {
+    enable "JSONP";
+    $app;
+};

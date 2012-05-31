@@ -1,0 +1,23 @@
+#!/usr/local/bin/perl
+use CGI::Application::PSGI;
+use Encode;
+use strict;
+use warnings;
+
+use Plack::Builder;
+
+my $handler = sub {
+    my $env = shift;
+    my $app = sub { [ 200, [ 'Content-Type' => 'text/html' ], [ '(4)Hello World' ] ] };
+    my $res = CGI::Application::PSGI->run($app);
+
+    $res->[2][0] = encode('utf-8', $res->[2][0]);
+
+    return $res;
+};
+
+builder {
+ #enable "Static", path => qr!^/static!, root => './htdocs';
+  enable 'Plack::Middleware::ContentLength';
+  $handler;
+};

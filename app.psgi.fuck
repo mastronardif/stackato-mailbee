@@ -1,0 +1,28 @@
+use CGI::PSGI;
+
+my $app = sub {
+    my $env = shift;
+    my $q = CGI::PSGI->new($env);
+
+    my $out = "Thanks for your inquiry.";
+    $out .= &reply(q);
+
+    return [ 
+        $q->psgi_header('text/plain'),
+        [ "Hello ", $q->param('name') ],
+    ];
+};
+
+sub reply {
+   my($query) = @_;
+   my(@values,$key);
+
+   my $buf = "<H2>What you wrote:</H2>";
+
+   foreach $key ($query->param) {
+      $buf .= "<STRONG>$key</STRONG> -> ";
+      @values = $query->param($key);
+      $buf .= join(", ",@values),"<hr />\n";
+  }
+  return $buf;
+}
