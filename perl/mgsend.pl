@@ -1,13 +1,10 @@
 #!/usr/bin/perl5 -w
 use Mail::Box::Manager 2.00;
-#use JSON; # imports encode_json, decode_json, to_json and from_json.
 use LWP::UserAgent;
-#use XML::Simple;
 use HTTP::Request::Common qw(GET);
 use HTTP::Request::Common qw(POST);
 use Data::Dump ();
 use Data::Dumper;
-#use Joemail;
 require "./Joemail.pm";
 
 use warnings;
@@ -17,7 +14,6 @@ use strict;
 # Originally authored: 01/18/12
 #
 
-#my $sent88="/usr/home/pl1321/boxes/joeschedule.com/joemail^/.imap/joemail/sent88";
 my %config = do 'myconfig.pl';
 
 # FM begin debug 5/17/12
@@ -38,7 +34,7 @@ die "please supply a filename as an argument.\n" unless $ARGV[0];
 =cut   
 @lines = <>;
 #@lines = <DATA>;
-print join ("KKKKK<br/>", @lines);
+#####print join ("KKKKK<br/>", @lines);
 =comment
    while(<>)
    {
@@ -55,17 +51,6 @@ exit;
 #Be warned: writing a MBOX folder may create a new file to replace the old folder. 
 #The permissions and owner of the file may get changed by this.
 
-=comment 
- my $mgr    = Mail::Box::Manager->new;
-
- my $folder = $mgr->open(folder => $sent88
-    , access    => 'rw'      # to update deleted
-    , extract   => 'ALWAYS'  # read all bodies immediately: faster
-  );
-
-die "Cannot open $folder to read: $!\n"
-    unless defined $folder;
-=cut
    # for each tag in file ________.
 
    my $left   = 0;

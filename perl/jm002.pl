@@ -2,10 +2,8 @@
 use CGI qw(:standard escapeHTML);
  use IO::String;
 use JSON; # imports encode_json, decode_json, to_json and from_json.
-#FM 4/29/12 use Mail::Box::Manager;
-#Lastr Modified: April 30 2012 11:37pm ny time
+#Lastr Modified: May 31 2012
 
-##require "./sch00.lib";
 ########use strict "vars";
 use warnings;
 
@@ -19,8 +17,6 @@ my $myOutpath= '.'; ##'/usr/home/pl1321/JSAdmin/log';
 my $mypath    ='perl .'; # 'perl /usr/www/users/pl1321/cgi-bin';
 my $fn =  "$myOutpath/cloudmail.txt";
 #my $fnMailGun =  "$myOutpath/mailgun.txt";
-
-
 #my $fnMail="$mypath/mailgun.txt";
 
 my $qs;
@@ -58,7 +54,6 @@ if ($DBG)
 {
    close($DBG);
 }
-
  
    #my $pipes = #"|$mypath/jm002a.pl".
    #"|echo '$qs'";
@@ -110,7 +105,6 @@ if($pipes)
 #exit;
    while(<$FMAIL>){
       print $_; # Print output if you like
-	  #print "\nRESULTS RESULTS RESULTS RESULTS RESULTS RESULTS RESULTS RESULTS <br/>";
    }
    close($FMAIL);
    print "<hr>222<hr>";
@@ -235,8 +229,7 @@ if ($FFF[0][0] =~ m/^To$/i)
     print $GUN "\n</HEADER>\n";
 
         #print($header);
-   print "\n WTF Dude you piped it(94). :)\n";
-   #print GUN "\n WTF Dude you piped it(64). :)\n";
+   #print "\n WTF Dude you piped it(94). :)\n";
    #print GUN $query->param('stripped-text');
    #print GUN $query->param('body-plain');
    my $body = $query->param('body-html');

@@ -492,3 +492,153 @@ localtime: Fri May 18 19:33:29 2012
 
 body -> 
 	bbobo
+
+***
+localtime: Wed May 30 20:19:29 2012
+
+body -> 
+	bbobo
+
+***
+localtime: Wed May 30 22:00:28 2012
+
+recipient -> 
+	joemail@joeschedule.mailgun.org
+sender -> 
+	mastronardif@gmail.com
+message-headers -> 
+	[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050; Tue, 17 Jan 2012 18:56:20 +0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]
+body-plain -> 
+	\<tags>http://alm-editorial-us.msgfocus.com/c/1bAImOgP9X0iltd8d62ebFF1x\</tags>
+
+***
+localtime: Wed May 30 22:06:45 2012
+
+recipient -> 
+	joemail@joeschedule.mailgun.org
+sender -> 
+	mastronardif@gmail.com
+message-headers -> 
+	[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050; Tue, 17 Jan 2012 18:56:20 +0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]
+body-plain -> 
+	\<tags>http://www.joeschedule.com\</tags>
+
+***
+localtime: Wed May 30 22:30:12 2012
+
+-F recipient -> 
+	joemail@joeschedule.mailgun.org \-F sender=mastronardif@gmail.com \-F message-headers='[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050
+ Tue, 17 Jan 2012 18:56:20  0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]' \-F body-plain -> 
+	'<tags>http://www.joeschedule.com</tags>' 
+
+***
+localtime: Wed May 30 22:31:41 2012
+
+-F recipient -> 
+	joemail@joeschedule.mailgun.org \-F sender=mastronardif@gmail.com \-F message-headers='[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050
+ Tue, 17 Jan 2012 18:56:20  0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]' \-F body-plain -> 
+	'<tags>http://www.joeschedule.com</tags>' 
+
+***
+localtime: Wed May 30 22:48:47 2012
+
+recipient -> 
+	joemail@joeschedule.mailgun.orgsender=mastronardif@gmail.commessage-headers=[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050
+ Tue, 17 Jan 2012 18:56:20  0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]body-plain -> 
+	<tags>http://www.joeschedule.com</tags>
+
+***
+localtime: Wed May 30 22:53:21 2012
+
+recipient -> 
+	joemail@joeschedule.mailgun.orgsender=mastronardif@gmail.commessage-headers=[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050
+ Tue, 17 Jan 2012 18:56:20  0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]body-plain -> 
+	<tags>http://www.joeschedule.com</tags>
+
+***
+localtime: Wed May 30 23:04:48 2012
+
+recipient -> 
+	joemail@joeschedule.mailgun.org
+sender -> 
+	mastronardif@gmail.com
+message-headers -> 
+	[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050; Tue, 17 Jan 2012 18:56:20 +0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]
+body-plain -> 
+	&lt;tags&gt;http:www.joeschedule.com&lt;/tags&gt;
+
+***
+localtime: Wed May 30 23:10:15 2012
+
+recipient -> 
+	joemail@joeschedule.mailgun.org
+sender -> 
+	mastronardif@gmail.com
+message-headers -> 
+	[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050; Tue, 17 Jan 2012 18:56:20 +0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]
+body-plain -> 
+	&lt;tags&gt;http://www.joeschedule.com&lt;/tags&gt;
+
+***
+localtime: Thu May 31 21:47:16 2012
+
+To -> 
+	jimmy@joeschedule.mailgun.org
+recipient -> 
+	joemail@joeschedule.mailgun.org
+sender -> 
+	mastronardif@gmail.com
+message-headers -> 
+	[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050; Tue, 17 Jan 2012 18:56:20 +0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]
+body-plain -> 
+	&lt;tags&gt;http://www.joeschedule.com&lt;/tags&gt;
+subject -> 
+	joemailweb fuck fuyck
+
+***
+localtime: Thu May 31 21:57:26 2012
+
+To -> 
+	jimmy@joeschedule.mailgun.org
+recipient -> 
+	joemail@joeschedule.mailgun.org
+sender -> 
+	mastronardif@gmail.com
+message-headers -> 
+	[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050; Tue, 17 Jan 2012 18:56:20 +0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]
+body-plain -> 
+	&lt;tags&gt;http://www.joeschedule.com&lt;/tags&gt;
+subject -> 
+	joemailweb fuck fuyck
+
+***
+localtime: Thu May 31 22:08:36 2012
+
+To -> 
+	jimmy@joeschedule.mailgun.org
+recipient -> 
+	joemail@joeschedule.mailgun.org
+sender -> 
+	mastronardif@gmail.com
+message-headers -> 
+	[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050; Tue, 17 Jan 2012 18:56:20 +0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]
+body-plain -> 
+	&lt;tags&gt;http://www.joeschedule.com&lt;/tags&gt;
+subject -> 
+	joemailweb fuck fuyck
+
+***
+localtime: Thu May 31 22:09:41 2012
+
+To -> 
+	jimmy@joeschedule.mailgun.org
+recipient -> 
+	joemail@joeschedule.mailgun.org
+sender -> 
+	mastronardif@gmail.com
+message-headers -> 
+	[["Received", "by 184.173.173.18 with SMTP mgrt -1057111050; Tue, 17 Jan 2012 18:56:20 +0000"],["Subject", "joemailweb"],["From", "Frank Mastronardi <mastronardif@gmail.com>"], ["X-Mailer", "iPod Mail (9A405)"],["Message-Id", "<8950389B-9325-4430-83FB-343C91A319D9@gmail.com>"],["Date", "Tue, 17 Jan 2012 13:56:17 -0500"],["To", "\"joemail@joeschedule.mailgun.org\" <joemail@joeschedule.mailgun.org>"],["X-Mailgun-Spf", "Neutral"]]
+body-plain -> 
+	&lt;tags&gt;http://www.joeschedule.com&lt;/tags&gt;
+subject -> 
+	joemailweb fuck fuyck
